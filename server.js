@@ -9,7 +9,7 @@ app.use(express.json());
 const db = mysql.createConnection({
     host: 'roundhouse.proxy.rlwy.net',
     user: 'root',
-    password: 'CAAFCCE6EBHgcHfH1aad-5dce5hEGCEf',
+    password: process.env.DB_PASSWORD,
     database: 'railway',
     port: 30736
 });
